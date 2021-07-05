@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ToDo extends React.Component {
+class Todo extends React.Component {
   render() {
     return (<div>
       <h1>Lets do {this.props.name}</h1>
@@ -33,7 +33,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ToDo task={this.state.task} id={this.state.id}/>
+        <Todo task={this.state.task} id={this.state.id}/>
         <button onClick={this.handleClick}>Add Todo</button>
         <h2>Welcome to your Todo App!</h2>
       </div>
